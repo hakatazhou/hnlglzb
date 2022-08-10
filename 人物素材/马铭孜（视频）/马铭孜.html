@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>马铭孜事迹介绍</title>
+    <link rel="stylesheet" href="马铭孜.css">
+</head>
+
+<body>
+    <div class="body">
+        <div> <img src="xh.jpg" class="xh"></div>
+        <div class="banner">
+            <h1 class="title-1 shine">参军戍边为国土 不负青春再出发</h1>
+            <div class="title-2">——上海工程技术大学马铭孜事迹</div>
+            <div class="content-video1"><video width="800px" controls="controls"><source src="马铭孜.mp4"></video></div>
+        </div>
+        <div class="main">
+            <div class="content-word1">
+                <p>铭孜是上海工程技术大学管理学院2018级学生，他刚年满20岁就光荣入伍，成为了一名边防战士，在两年的军旅生涯里，他驻守在海拔近5000米的喜马拉雅山南麓边防一线，守卫着祖国的西南大门。</p>
+                <p>在执行某次任务中，马铭孜克服了高原缺氧、昼夜温差大、缺乏补给只能进食速热食品等恶劣条件，为了防止暴露自己，甚至必须24小时坚守在观察点上。最终，历时一个多月，马铭孜成功完成了该项任务，他说，这次任务锻炼出了自己不畏艰难、坚韧不拔的意志品质。如今，马铭孜回到了阔别已久的大学校园，身边的很多事情都发生了改变，但部队带来的历练让他获益无穷。</p>
+                <p>马铭孜说，男子汉就应该去祖国最艰苦、最需要的地方。短短两年的时间里，经过了部队大熔炉的摔打和历练，马铭孜曾经稚气的脸庞上，已刻上了成熟和坚强的烙印。</p>
+                <p>“当这一天来临的时候，我愿把我的满腔热血挥洒在边防线上，让我的身躯长眠在这高原边境上，这将是一名战士的最高荣誉”，这是马铭孜在“中印洞朗对峙事件”前夕写下的请战书。</p>
+                <p>在对峙事件中马铭孜全程战斗在最前线。在一次执行强行拆除印军越界掩体工事中，马铭孜一行突击队员在黎明前夕潜伏到印军阵前，借着大雾掩护火速拆除印军越界掩体工事。在任务执行过程中，马铭孜主动将自己的作战手套让给了身边的战友，徒手扒掩体石墙。寒冷的气温很快将他的双手冻得失去了知觉，直到右手被石块划破，鲜血把袖口浸透时，才知道自己受了伤。在突击队员们的齐心协力下，连队防区内印军修筑的所有越界地堡工事被完全拆除，全部被侵占领土均被收复。当印军从睡梦中醒来时发现大局已定，疯狂反扑失败后只得仓皇撤退。</p>
+                <p>为了巩固阵地，控制山顶制高点，马铭孜和其他三名战士主动请缨留守高地。在驻守的近一个月时间里，战士四人分成两组轮番值班禁戒，24小时监控印军动向。六七月的西藏是雨季，马铭孜的裤管干了又湿，湿了又干，让他有了一双泡烂了的“战壕脚”。因为远离大部队，留守小队轮流长途跋涉去带饭，每天睡掩体、喝雪水、吃干粮，一天只能吃上一顿午饭。由于长时间营养不良，脱发、胃病成了马铭孜之后一段生活中的常客。“只要印军不撤退，我绝不下前线！”马铭孜用行动捍卫了他的誓言。</p>
+                <p>印军全线撤出我国边境后，马铭孜又投身构筑工事地堡任务。在没有机械工程设备的情况下，马铭孜和战士们硬是人工挖掘开凿，修筑了一座座质量过硬的地堡和一条条纵横交错的战壕，这些战壕地堡像一颗颗钢钉一样，扎在祖国的边防线上，巩牢了边境铁防线这座威严高墙。</p>
+                <p>回到学校后，他积极投身到征兵宣传等校园活动中，还发挥个人所长，组织学校退役大学生士兵进行各项技能训练，用行动与身边的同学共同前进。</p>
+                <div class="dibu">
+                    <div class="dibu-xian"></div>
+                    <div class="dibu-word">资料来源于上海市退役军人事务局 </div>
+                </div>
+            </div>
+        </div>
+        <div class="slider-bar">
+            <div class="goBack"><img src="火箭.png" class="goBack-img"></div>
+        </div>
+        <div class="sprit-left">
+            <div>戍边国土</div>
+            <div>不负青春</div>
+        </div>
+        <script>
+            var sliderbar = document.querySelector('.slider-bar');
+            var banner = document.querySelector('.banner');
+            var bannerTop = banner.offsetTop
+            var sliderbarTop = sliderbar.offsetTop - bannerTop;
+            var main = document.querySelector('.main');
+            var goBack = document.querySelector('.goBack');
+            var mainTop = main.offsetTop;
+            document.addEventListener('scroll', function() {
+                if (window.pageYOffset >= bannerTop) {
+                    sliderbar.style.position = 'fixed';
+                    sliderbar.style.top = sliderbarTop + 'px';
+                } else {
+                    sliderbar.style.position = 'absolute';
+                    sliderbar.style.top = '300px';
+                }
+                if (window.pageYOffset >= mainTop) {
+                    goBack.style.display = 'block';
+                } else {
+                    goBack.style.display = 'none';
+                }
+
+            })
+            goBack.addEventListener('click', function() {
+                animate(window, 0);
+            });
+
+            function animate(obj, target, callback) {
+                clearInterval(obj.timer);
+                obj.timer = setInterval(function() {
+                    var step = (target - window.pageYOffset) / 10;
+                    step = step > 0 ? Math.ceil(step) : Math.floor(step);
+                    if (window.pageYOffset == target) {
+                        clearInterval(obj.timer);
+                        callback && callback();
+                    }
+                    window.scroll(0, window.pageYOffset + step);
+                }, 15);
+            }
+        </script>
+</body>
+
+</html>

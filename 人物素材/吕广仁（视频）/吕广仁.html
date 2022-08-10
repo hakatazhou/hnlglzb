@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>吕广仁事迹介绍</title>
+    <link rel="stylesheet" href="吕广仁.css">
+</head>
+
+<body>
+    <div class="body">
+        <div> <img src="xh.jpg" class="xh"></div>
+        <div class="banner">
+            <h1 class="title-1 shine">热血青春 护佑生命</h1>
+            <div class="title-2">——湖南中医药大学吕广仁事迹</div>
+            <div class="content-video1"><video width="800px" controls="controls"><source src="吕广仁.mp4"></video></div>
+        </div>
+        <div class="main">
+            <div class="content-word1">
+                <p>吕广仁，中共党员，25岁，河南沧州人，现为湖南中医药大学研究生。5年来，他参与无偿献血71次，其中包括2次全血和69次成分血，先后荣获全国无偿献血奉献奖金奖、全国无偿献血志愿服务奖二星奖、“第十四届中国大学生年度人物”入围奖等荣誉。</p>
+                <p>今年25岁的吕广仁，乍一见感觉是很普通的大男孩，瘦瘦高高的样子，笑起来腼腆中透着一种超脱于年龄的稳重。记者初识他，是10月14日他为了挽救一名素不相识的白血病患者，毫不犹豫捐献了186毫升造血干细胞。再深入了解，发现这个北方男孩不简单。他有一抽屉的无偿献血证。自高三毕业以来，他已经献血两万多毫升，相当于四五个成年人全身的血量。</p>
+                <p>得知他5年来坚持献血的事迹，大家都很吃惊，是什么让他一直坚持默默做这样一件事？吕广仁说，在家乡读高中时，班上有一名同学去县城献了血。同学的行为在他的心中留下了特别的记忆，虽然当时对献血不了解，但感觉这件事很有意义。高中毕业后的暑假，他去县城看到采血车，便毫不犹豫地完成了人生的第一次献血，“第一次献血的感觉是‘真的一点也不痛’”。2014年，他独自来到长沙求学，就约上同学走上校外停放的献血车。他说，是无偿献血拉近了他与长沙这座城市的距离，让他感受到了人性的善良与温暖。成为一名医学生后，吕广仁对献血有了更多的了解。当知道全血一年只能献两次，而成分血每两周就可以献一次，他毅然选择了捐献成分血。长沙只有3个地方可以采集成分血，吕广仁就定期自己乘车去长沙血液中心献血。</p>
+                <p>有人对于他这种行为不理解，甚至问道：“献血会上瘾吗？” 吕广仁淡淡一笑说：“别人不理解献血这件事，会这样想，很正常。身为医学生，虽然我没有亲身经历过生命垂危等待用血的焦急心情，但是临床上这样的病人也很常见，目前全国血库的情况并不乐观，比较紧缺，我只是希望能够帮助到别人。”随着献血次数的增加，对无偿献血认识的深入，他越发感觉到一个人的力量远远不够。于是，他积极参加无偿献血志愿服务活动，在平时的生活学习中，向身边的同学宣传无偿献血。慢慢地，了解无偿献血的同学多了起来，有的同学还在他的影响下参与献血。次数多的同学，目前已献血30多次。“无偿献血，于己无害，于人有益，何乐不为！”这是吕广仁时常挂在嘴边的话。献血已经成为了他的一种习惯，除去寒暑假，几乎每半个月就要献血一次。</p>
+                <p>“世界上最奇妙的感觉就是你捐献的血液流淌到另一个人的身体里，你走进了他的生命，而你与他素不相识。”吕广仁说，天气，总有冷暖，但血，总是热的。</p>
+                <div class="dibu">
+                    <div class="dibu-xian"></div>
+                    <div class="dibu-word">资料来源于bilibili和中国大学生在线 </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slider-bar">
+        <div class="goBack"><img src="火箭.png" class="goBack-img"></div>
+    </div>
+    <div class="sprit-left">
+        <div>热血青春</div>
+        <div>护佑生命</div>
+    </div>
+    <script>
+        var sliderbar = document.querySelector('.slider-bar');
+        var banner = document.querySelector('.banner');
+        var bannerTop = banner.offsetTop
+        var sliderbarTop = sliderbar.offsetTop - bannerTop;
+        var main = document.querySelector('.main');
+        var goBack = document.querySelector('.goBack');
+        var mainTop = main.offsetTop;
+        document.addEventListener('scroll', function() {
+            if (window.pageYOffset >= bannerTop) {
+                sliderbar.style.position = 'fixed';
+                sliderbar.style.top = sliderbarTop + 'px';
+            } else {
+                sliderbar.style.position = 'absolute';
+                sliderbar.style.top = '300px';
+            }
+            if (window.pageYOffset >= mainTop) {
+                goBack.style.display = 'block';
+            } else {
+                goBack.style.display = 'none';
+            }
+
+        })
+        goBack.addEventListener('click', function() {
+            animate(window, 0);
+        });
+
+        function animate(obj, target, callback) {
+            clearInterval(obj.timer);
+            obj.timer = setInterval(function() {
+                var step = (target - window.pageYOffset) / 10;
+                step = step > 0 ? Math.ceil(step) : Math.floor(step);
+                if (window.pageYOffset == target) {
+                    clearInterval(obj.timer);
+                    callback && callback();
+                }
+                window.scroll(0, window.pageYOffset + step);
+            }, 15);
+        }
+    </script>
+</body>
+
+</html>

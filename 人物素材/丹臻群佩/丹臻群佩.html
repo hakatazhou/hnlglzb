@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>丹臻群佩事迹介绍</title>
+    <link rel="stylesheet" href="丹臻群佩.css">
+</head>
+
+<body>
+    <div class="body">
+        <div> <img src="xh.jpg" class="xh"></div>
+        <div class="banner">
+            <h1 class="title-1 bg">
+                <p class="shine">心系家国 砥砺前行
+                </p>
+            </h1>
+            <div class="title-2">——奋斗在党史学习和普法一线的赤子青年</div>
+            <div><img src="丹臻群佩.jpg" class="content-img1"></div>
+        </div>
+        <div class="main">
+            <div class="content-word1">
+                <p>丹臻群佩，中国传媒大学播音主持艺术学院广播电视专业硕士研究生。来自西藏的他，常常说自己是在党的光辉下成长起来的新一代的藏族青年，“没有共产党就没有新中国，没有新中国就没有新西藏，没有新西藏就没有今天的我”，今年恰逢西藏和平解放70周年，丹臻的这种感受更为强烈。</p>
+            </div>
+            <div class="content-word1">
+                <p>2007年还在上小学的丹臻就曾作为内地学生代表赴香港参加两岸四地首届国际儿童保护与权益论坛，并受到央视《少儿频道》的专访。2008年小学毕业后，丹臻考入重庆西藏中学，在那里完成了初高中的学习，为国家内地西藏班优秀毕业生；本科毕业于中国政法大学政治系，期间曾作为公派交换生赴台湾金门大学国际暨大陆事务学系学习，成为该校历史上首位藏族学生；本科期间丹臻作为欧盟法律与政治制度研究项目交流生赴法国、德国、比利时、卢森堡进行学术交流；2019年丹臻成为中国传媒大学的硕士研究生，师从中国新闻界代表人物白岩松、中国传媒大学新闻播音系主任翁佳教授。不论身在哪里，他始终不忘的是“走出去，是为了更好地回来”。</p>
+            </div>
+            <img src="6.jpg" width="80px">
+            <div class="box">
+                <p class="marquee1">全国青年法治宣讲第一人</p>
+            </div>
+            <div class="content-word1">
+                <p>
+                    丹臻群佩曾创建全国首个青年大学生法治宣讲团，组织发起省级双语特色模拟法庭，开展基层法律援助活动，团队拥有一支由全国政协委员、知名律师、法学教授等组成的专业顾问团，积极学习和宣传习近平法治思想，受到中央政法委和团中央的关注和支持，被授予“双语模拟法庭突出贡献奖”，系该奖项设立以来首位获得者。团队以“弘扬法治精神，建设法治社会”为宗旨，连续举办5届省级双语特色模拟法庭活动，定期进行基层普法宣讲，开展大学生法学论文大赛，普法事迹被人民网、法制网、中国法律援助网等报道。
+                </p>
+            </div>
+            <img src="6.jpg" width="80px">
+            <div class="box">
+                <p class="marquee2">党史学习的践行者</p>
+            </div>
+            <div class="content-word1">
+                <p>
+                    丹臻群佩是中华口述历史研究会最年轻的副秘书长、西藏自治区口述历史协会筹委会秘书长，积极践行党史学习教育要求，搜集抢救珍贵家国记忆，立志以口述历史讲好中国故事，出版口述史著作《共进与赋能：内地西藏班35年35人口述史》，并举行全国巡回分享会。该书由全国政协常委、中宣部原副部长、中国文联原党组书记胡振民亲笔作序，个人导师白岩松亲自推荐。丹臻群佩以一名内地西藏班毕业生的感恩之心，以口述历史的专业研究方法，通过面对面深度访谈的形式，充分挖掘并精心整理了自1985年内地西藏班办学至今的35年里奋斗在各个行业，包括汉族、藏族、门巴族等最具代表性的35位毕业生的求学经历和奋斗历程，成为首部内地西藏班口述史，讲述了在党中央的关怀下几代西藏的孩子赴祖国内地求学成才的感人奋斗故事。受到中宣部、教育部、国家民委、团中央以及自治区主要领导的充分肯定，入选中共西藏自治区委宣传部文艺扶持项目，被人民日报、新华社、央视等持续报道，现即将被翻译成英文和尼泊尔文，进行国际宣传。
+                </p>
+            </div>
+        </div>
+        <div class="dibu">
+            <div class="dibu-xian"></div>
+            <div>资料来源于中国大学生在线</div>
+        </div>
+    </div>
+    <div class="slider-bar">
+        <div class="goBack"><img src="火箭.png" class="goBack-img"></div>
+    </div>
+    <div class="sprit-left">
+        <div>宣传法治</div>
+        <div>心系家乡</div>
+    </div>
+    <script>
+        var sliderbar = document.querySelector('.slider-bar');
+        var banner = document.querySelector('.banner');
+        var bannerTop = banner.offsetTop
+        var sliderbarTop = sliderbar.offsetTop - bannerTop;
+        var main = document.querySelector('.main');
+        var goBack = document.querySelector('.goBack');
+        var mainTop = main.offsetTop;
+        document.addEventListener('scroll', function() {
+            if (window.pageYOffset >= bannerTop) {
+                sliderbar.style.position = 'fixed';
+                sliderbar.style.top = sliderbarTop + 'px';
+            } else {
+                sliderbar.style.position = 'absolute';
+                sliderbar.style.top = '300px';
+            }
+            if (window.pageYOffset >= mainTop) {
+                goBack.style.display = 'block';
+            } else {
+                goBack.style.display = 'none';
+            }
+
+        })
+        goBack.addEventListener('click', function() {
+            animate(window, 0);
+        });
+
+        function animate(obj, target, callback) {
+            clearInterval(obj.timer);
+            obj.timer = setInterval(function() {
+                var step = (target - window.pageYOffset) / 10;
+                step = step > 0 ? Math.ceil(step) : Math.floor(step);
+                if (window.pageYOffset == target) {
+                    clearInterval(obj.timer);
+                    callback && callback();
+                }
+                window.scroll(0, window.pageYOffset + step);
+            }, 15);
+        }
+    </script>
+</body>
+
+</html>

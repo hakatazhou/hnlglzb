@@ -1,0 +1,324 @@
+* {
+    margin: auto;
+    padding: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    text-align: center;
+    background-color: #f5f5f5!important;
+    background-image: url(bc.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.body {
+    width: 1000px;
+    background-color: #fff;
+    padding: 0px 20px 0px 20px;
+}
+
+
+/*头部*/
+
+.xh {
+    width: 400px;
+    height: 100px;
+    position: relative;
+    right: 300px;
+}
+
+.banner {
+    margin-top: 20px;
+}
+
+.jieshao {
+    width: 100%;
+}
+
+.title-1 {
+    font-size: 40px;
+}
+
+.bg {
+    width: 1000px;
+    height: 60px;
+    margin: 0 auto;
+}
+
+.shine {
+    width: 1000px;
+    font-family: "Microsoft YaHei";
+    font-size: 50px;
+    text-align: center;
+    background: -webkit-linear-gradient(left, rgb(0, 81, 255), rgb(217, 255, 0)) 0 0 no-repeat;
+    -webkit-background-size: 160px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(52, 48, 48, 0.454);
+    -webkit-animation: shine 3s infinite;
+}
+
+@-webkit-keyframes shine {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+.title-2 {
+    font-size: 20px;
+    margin-top: 15px;
+    color: #505050;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/*头部左边*/
+
+.title-left {
+    position: relative;
+    width: 900px;
+    height: 300px;
+    margin-right: 20px;
+}
+
+.title-left-name {
+    position: absolute;
+    top: 30px;
+}
+
+.name1 {
+    font-size: 32px;
+}
+
+.name2 {
+    font-size: 18px;
+}
+
+.title-left-chengjiu {
+    position: absolute;
+    top: 90px;
+    text-indent: 2em;
+    text-align: left;
+}
+
+.title-left-biao {
+    width: 100%;
+    height: 120px;
+    background-color: pink;
+    position: absolute;
+    bottom: 20px;
+}
+
+.biao {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    background-color: #fff;
+    border-bottom: #999 dashed 1px;
+}
+
+.biao-1 {
+    width: 130px;
+    color: #999;
+    text-align: left;
+    font-weight: bolder;
+    font-size: 14px;
+    padding-left: 10px;
+}
+
+.biao-2 {
+    width: 380px;
+    text-align: left;
+}
+
+.biao-3 {
+    color: #999;
+    text-align: left;
+    width: 120px;
+    font-weight: bolder;
+    font-size: 14px;
+}
+
+.biao-4 {
+    width: 280px;
+    text-align: left;
+}
+
+
+/*头部右边*/
+
+.title-right {
+    width: 300px;
+    height: 200px;
+}
+
+.title-right-img {
+    width: 195px;
+}
+
+
+/*目录*/
+
+.menu {
+    position: relative;
+    right: 30%;
+    width: 40%;
+    height: 120px;
+    border-top: solid rgb(174, 167, 167) 2px;
+    border-bottom: solid rgb(174, 167, 167) 2px;
+}
+
+.menu-left {
+    height: 100%;
+    width: 39%;
+    float: left;
+    line-height: 120px;
+    font-size: 24px;
+    border-right: solid rgb(174, 167, 167) 1px;
+}
+
+.menu-right {
+    height: 100%;
+    width: 60%;
+    float: left;
+}
+
+.menu-right-1 {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+}
+
+
+/*内容*/
+
+.word {
+    margin-top: 30px;
+    border-top: solid rgb(174, 167, 167) 1px;
+    padding-top: 20px;
+}
+
+.word-toubu {
+    height: 50px;
+}
+
+.word-fangkuai {
+    width: 30px;
+    height: 50px;
+    background-color: blue;
+    float: left;
+}
+
+.box {
+    font-family: "微软雅黑";
+    width: 600px;
+    margin: 10px auto;
+    font-size: 36px;
+    color: rgb(27, 27, 31);
+}
+
+.marquee {
+    text-align: left;
+    width: 400px;
+    position: relative;
+    -webkit-animation: marquee 5s linear infinite alternate;
+}
+
+.marquee1 {
+    text-align: left;
+    width: 400px;
+    position: relative;
+    -webkit-animation: marquee 3s linear infinite alternate;
+}
+
+.marquee2 {
+    text-align: left;
+    width: 600px;
+    position: relative;
+    -webkit-animation: marquee 4s linear infinite alternate;
+}
+
+@-webkit-keyframes marquee {
+    0% {
+        left: 0px;
+    }
+    100% {
+        left: 100px;
+    }
+}
+
+.word-content {
+    text-indent: 2em;
+    text-align: left;
+    font-size: 18px;
+    color: #505050;
+    padding: 0px 20px;
+    line-height: 35px;
+}
+
+
+/*底部*/
+
+.dibu {
+    margin-top: 60px;
+    width: 100%;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.dibu-xian {
+    height: 2px;
+    background-color: brown;
+    margin-bottom: 20px;
+}
+
+.goBack {
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    right: 100px;
+    top: 300px;
+    display: none;
+}
+
+.goBack-img {
+    width: 150px;
+}
+
+.sprit-left {
+    position: fixed;
+    left: 3%;
+    top: 25%;
+    width: 180px;
+    height: 100px;
+    font-size: 60px;
+    display: flex;
+    justify-content: space-around;
+    animation: flicker 2s infinite;
+    color: rgb(246, 163, 107);
+    font-weight: bolder;
+}
+
+@keyframes flicker {
+    /*创建动画*/
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
