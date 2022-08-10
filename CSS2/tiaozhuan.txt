@@ -1,0 +1,4 @@
+var btn = document.querySelector('span');
+btn.addEventListener('click', function () {
+    location.href = "新建文本文档.html";
+})

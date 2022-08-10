@@ -1,0 +1,22 @@
+.list_item {
+	width: 320px;
+	height: 60px;
+	margin: 0 auto;
+}
+.list_item li {
+	float: left;
+	width: 56px;
+	height: 56px;
+	border: 2px solid transparent;
+	margin: 0 2px;
+}
+.list_item li.current {
+	border-color: #c81623;
+}
+
+.add {
+	top: 0;
+	
+}
+
+
